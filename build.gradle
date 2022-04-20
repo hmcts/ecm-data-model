@@ -1,0 +1,45 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+group 'uk.gov.hmcts.reform'
+version '0.0.1'
+
+sourceCompatibility = '11.0'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+publishing {
+    publications {
+        Main(MavenPublication) {
+            from components.java
+            groupId project.group
+            artifactId 'ecm-data-model'
+            version project.version
+        }
+    }
+}
+
+ext {
+    lombokVersion = '1.18.22'
+}
+
+dependencies {
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: lombokVersion
+    annotationProcessor group: 'org.projectlombok', name: 'lombok', version: lombokVersion
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.13.2'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.2.2'
+    implementation group: 'com.google.guava', name: 'guava', version: '31.1-jre'
+    implementation group: 'org.apache.commons', name: 'commons-collections4', version: '4.4'
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
+    implementation group: 'org.springframework', name: 'spring-core', version: '5.3.19'
+}
+
+jar {
+    enabled = true
+}
