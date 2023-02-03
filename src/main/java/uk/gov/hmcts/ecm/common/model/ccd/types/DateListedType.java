@@ -284,6 +284,10 @@ public class DateListedType {
     private String hearingRoomTeessideMags;
     @JsonProperty("hearingRoomWhitby")
     private String hearingRoomWhitby;
+    @JsonProperty("hearingVenueNameForNewcastleCFT")
+    private String hearingVenueNameForNewcastleCFT;
+    @JsonProperty("hearingVenueNameForTeessideMags")
+    private String hearingVenueNameForTeessideMags;
 
     //SCOTLAND
     @JsonProperty("Hearing_room_Dundee")
