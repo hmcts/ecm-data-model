@@ -99,6 +99,9 @@ public class MultipleData {
     private String fileLocationEdinburgh;
     @JsonProperty("positionType")
     private String positionType;
+
+    @JsonProperty("conciliationTrack")
+    private String conciliationTrack;
     @JsonProperty("clerkResponsible")
     private String clerkResponsible;
     @JsonProperty("receiptDate")
