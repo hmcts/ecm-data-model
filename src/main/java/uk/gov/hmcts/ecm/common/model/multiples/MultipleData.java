@@ -78,6 +78,9 @@ public class MultipleData {
     private DynamicFixedListType batchUpdateJurisdiction;
     @JsonProperty("batchUpdateRespondent")
     private DynamicFixedListType batchUpdateRespondent;
+    @JsonProperty("batchRespondentUpdateType")
+    private String batchRespondentUpdateType;
+
     @JsonProperty("batchUpdateJudgment")
     private DynamicFixedListType batchUpdateJudgment;
     @JsonProperty("batchUpdateRespondentRep")
