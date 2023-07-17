@@ -140,6 +140,8 @@ public class CaseData {
     private AddressLabelsAttributesType addressLabelsAttributesType;
     @JsonProperty("caseNotes")
     private String caseNotes;
+    @JsonProperty("nextListedDate")
+    private String nextListedDate;
     @JsonProperty("claimantWorkAddress")
     private ClaimantWorkAddressType claimantWorkAddress;
     @JsonProperty("claimantRepresentedQuestion")
