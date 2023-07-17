@@ -16,6 +16,10 @@ import uk.gov.hmcts.ecm.common.model.ccd.Address;
 @AllArgsConstructor
 public class RepresentedTypeR {
 
+    @JsonProperty("id")
+    private String id;
+    @JsonProperty("respondentId")
+    private String respondentId;
     @JsonProperty("dynamic_resp_rep_name")
     private DynamicFixedListType dynamicRespRepName;
     @JsonProperty("resp_rep_name")
