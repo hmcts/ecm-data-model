@@ -291,4 +291,6 @@ public class CaseData {
 
     @JsonProperty("stateAPI")
     private String stateAPI;
+    @JsonProperty("acasCertificate")
+    private String acasCertificate;
 }
