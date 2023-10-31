@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import uk.gov.hmcts.ecm.common.model.bulk.types.DynamicFixedListType;
+import uk.gov.hmcts.ecm.common.model.bundle.Bundle;
 import uk.gov.hmcts.ecm.common.model.ccd.items.AddressLabelTypeItem;
 import uk.gov.hmcts.ecm.common.model.ccd.items.BFActionTypeItem;
 import uk.gov.hmcts.ecm.common.model.ccd.items.DepositTypeItem;
@@ -291,4 +292,10 @@ public class CaseData {
 
     @JsonProperty("stateAPI")
     private String stateAPI;
+    @JsonProperty("bundleConfiguration")
+    private String bundleConfiguration;
+    @JsonProperty("caseBundles")
+    private List<Bundle> caseBundles;
+    @JsonProperty("digitalCaseFile")
+    private List<DocumentTypeItem> digitalCaseFile;
 }
