@@ -8,9 +8,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Value;
 import lombok.extern.jackson.Jacksonized;
 
-@EqualsAndHashCode(callSuper = true)
 @JsonIgnoreProperties(ignoreUnknown = true)
-@Value
 @Builder(toBuilder = true)
 @Jacksonized public record BundleFolder(
         BundleFolderDetails value) {

@@ -9,9 +9,7 @@ import lombok.Value;
 import lombok.extern.jackson.Jacksonized;
 
 import java.util.List;
-
-@EqualsAndHashCode(callSuper = true) @JsonIgnoreProperties(ignoreUnknown = true)
-@Value
+@JsonIgnoreProperties(ignoreUnknown = true)
 @Builder(toBuilder = true)
 @Jacksonized
 public record BundleFolderDetails(String name, List<BundleDocument> documents,

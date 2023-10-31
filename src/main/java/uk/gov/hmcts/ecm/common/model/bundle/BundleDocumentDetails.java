@@ -9,9 +9,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Value;
 import lombok.extern.jackson.Jacksonized;
 
-@EqualsAndHashCode(callSuper = true)
 @JsonIgnoreProperties(ignoreUnknown = true)
-@Value
 @Builder(toBuilder = true)
 @Jacksonized
 public record BundleDocumentDetails(String name, String description, int sortIndex, DocumentLink sourceDocument) {

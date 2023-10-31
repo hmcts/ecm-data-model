@@ -9,6 +9,8 @@ import lombok.EqualsAndHashCode;
 import lombok.Value;
 import lombok.extern.jackson.Jacksonized;
 
-@EqualsAndHashCode(callSuper = true) @JsonIgnoreProperties(ignoreUnknown = true) @Value @Builder(toBuilder = true) @JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonIgnoreProperties(ignoreUnknown = true)
+@Builder(toBuilder = true)
+@JsonInclude(JsonInclude.Include.NON_NULL)
 @Jacksonized public record MultiBundleConfig(String value) {
 }
