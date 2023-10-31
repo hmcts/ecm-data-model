@@ -141,6 +141,8 @@ public class CaseData {
     private AddressLabelsAttributesType addressLabelsAttributesType;
     @JsonProperty("caseNotes")
     private String caseNotes;
+    @JsonProperty("nextListedDate")
+    private String nextListedDate;
     @JsonProperty("claimantWorkAddress")
     private ClaimantWorkAddressType claimantWorkAddress;
     @JsonProperty("claimantRepresentedQuestion")
@@ -289,13 +291,19 @@ public class CaseData {
     private String positionTypeCT;
     @JsonProperty("linkedCaseCT")
     private String linkedCaseCT;
-
+    @JsonProperty("transferredCaseLink")
+    private String transferredCaseLink;
     @JsonProperty("stateAPI")
     private String stateAPI;
+
     @JsonProperty("bundleConfiguration")
     private String bundleConfiguration;
     @JsonProperty("caseBundles")
     private List<Bundle> caseBundles;
     @JsonProperty("digitalCaseFile")
     private List<DocumentTypeItem> digitalCaseFile;
+
+    @JsonProperty("acasCertificate")
+    private String acasCertificate;
+
 }
