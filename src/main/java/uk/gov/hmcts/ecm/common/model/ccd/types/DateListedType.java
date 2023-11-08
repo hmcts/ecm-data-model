@@ -406,6 +406,8 @@ public class DateListedType {
     private String hearingRoomLlangefniCourt;
     @JsonProperty("hearingRoomLlangefni_Mags")
     private String hearingRoomLlangefniMags;
+    @JsonProperty("hearingRoomMold")
+    private String hearingRoomMold;
     @JsonProperty("hearingRoomMold_Court")
     private String hearingRoomMoldCourt;
     @JsonProperty("hearingRoomNeath_Mags")
