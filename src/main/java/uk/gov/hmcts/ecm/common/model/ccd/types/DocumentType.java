@@ -43,5 +43,7 @@ public class DocumentType {
     private String documentType;
     @JsonProperty("dateOfCorrespondence")
     private String dateOfCorrespondence;
+    @JsonProperty("documentNumber")
+    private String documentNumber;
 
 }
