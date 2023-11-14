@@ -26,6 +26,7 @@ import uk.gov.hmcts.ecm.common.model.ccd.types.ClaimantWorkAddressType;
 import uk.gov.hmcts.ecm.common.model.ccd.types.CompanyPremisesType;
 import uk.gov.hmcts.ecm.common.model.ccd.types.CorrespondenceScotType;
 import uk.gov.hmcts.ecm.common.model.ccd.types.CorrespondenceType;
+import uk.gov.hmcts.ecm.common.model.ccd.types.DigitalCaseFileType;
 import uk.gov.hmcts.ecm.common.model.ccd.types.RepresentedTypeC;
 import uk.gov.hmcts.ecm.common.model.ccd.types.RestrictedReportingType;
 import uk.gov.hmcts.ecm.common.model.listing.ListingData;
@@ -301,7 +302,7 @@ public class CaseData {
     @JsonProperty("caseBundles")
     private List<Bundle> caseBundles;
     @JsonProperty("digitalCaseFile")
-    private List<DocumentTypeItem> digitalCaseFile;
+    private DigitalCaseFileType digitalCaseFile;
 
     @JsonProperty("acasCertificate")
     private String acasCertificate;
