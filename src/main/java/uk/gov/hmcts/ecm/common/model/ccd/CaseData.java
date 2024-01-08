@@ -25,15 +25,20 @@ import uk.gov.hmcts.ecm.common.model.ccd.types.ClaimantWorkAddressType;
 import uk.gov.hmcts.ecm.common.model.ccd.types.CompanyPremisesType;
 import uk.gov.hmcts.ecm.common.model.ccd.types.CorrespondenceScotType;
 import uk.gov.hmcts.ecm.common.model.ccd.types.CorrespondenceType;
+import uk.gov.hmcts.ecm.common.model.ccd.types.HearingListingType;
 import uk.gov.hmcts.ecm.common.model.ccd.types.RepresentedTypeC;
 import uk.gov.hmcts.ecm.common.model.ccd.types.RestrictedReportingType;
 import uk.gov.hmcts.ecm.common.model.listing.ListingData;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data
 public class CaseData {
+    public CaseData() {
+        hearingsCollectionForUpdate = new ArrayList<>();
+    }
 
     @JsonProperty("tribunalCorrespondenceAddress")
     private Address tribunalCorrespondenceAddress;
@@ -110,8 +115,18 @@ public class CaseData {
     private String fileLocationDundee;
     @JsonProperty("fileLocationEdinburgh")
     private String fileLocationEdinburgh;
+
+    @JsonProperty("updateHearingDetails")
+    private HearingListingType updateHearingDetails;
     @JsonProperty("hearingCollection")
     private List<HearingTypeItem> hearingCollection;
+    @JsonProperty("hearingsCollectionForUpdate")
+    private List<HearingTypeItem> hearingsCollectionForUpdate;
+    @JsonProperty("selectedHearingNumberForUpdate")
+    private DynamicFixedListType selectedHearingNumberForUpdate;
+    @JsonProperty("hearingUpdateFilterType")
+    private String hearingUpdateFilterType;
+
     @JsonProperty("depositType")
     private List<DepositTypeItem> depositCollection;
     @JsonProperty("judgementCollection")
