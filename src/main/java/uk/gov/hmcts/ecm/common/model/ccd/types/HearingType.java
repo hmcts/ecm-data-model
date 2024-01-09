@@ -5,11 +5,15 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import uk.gov.hmcts.ecm.common.model.ccd.items.DateListedTypeItem;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data
 public class HearingType {
+    public HearingType() {
+       hearingDateCollection = new ArrayList<>();
+    }
 
     @JsonProperty("Hearing_type")
     private String hearingType;
