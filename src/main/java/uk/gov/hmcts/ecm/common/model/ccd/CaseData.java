@@ -311,4 +311,11 @@ public class CaseData {
     private String stateAPI;
     @JsonProperty("acasCertificate")
     private String acasCertificate;
+
+    @JsonProperty("adrDocumentCollection")
+    private List<DocumentTypeItem> adrDocumentCollection;
+    @JsonProperty("piiDocumentCollection")
+    private List<DocumentTypeItem> piiDocumentCollection;
+    @JsonProperty("appealDocumentCollection")
+    private List<DocumentTypeItem> appealDocumentCollection;
 }
