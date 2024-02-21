@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import uk.gov.hmcts.ecm.common.model.bulk.types.DynamicFixedListType;
+import uk.gov.hmcts.ecm.common.model.bundle.Bundle;
 import uk.gov.hmcts.ecm.common.model.ccd.items.AddressLabelTypeItem;
 import uk.gov.hmcts.ecm.common.model.ccd.items.BFActionTypeItem;
 import uk.gov.hmcts.ecm.common.model.ccd.items.DepositTypeItem;
@@ -25,6 +26,7 @@ import uk.gov.hmcts.ecm.common.model.ccd.types.ClaimantWorkAddressType;
 import uk.gov.hmcts.ecm.common.model.ccd.types.CompanyPremisesType;
 import uk.gov.hmcts.ecm.common.model.ccd.types.CorrespondenceScotType;
 import uk.gov.hmcts.ecm.common.model.ccd.types.CorrespondenceType;
+import uk.gov.hmcts.ecm.common.model.ccd.types.DigitalCaseFileType;
 import uk.gov.hmcts.ecm.common.model.ccd.types.HearingListingType;
 import uk.gov.hmcts.ecm.common.model.ccd.types.RepresentedTypeC;
 import uk.gov.hmcts.ecm.common.model.ccd.types.RestrictedReportingType;
@@ -309,6 +311,14 @@ public class CaseData {
     private String transferredCaseLink;
     @JsonProperty("stateAPI")
     private String stateAPI;
+
+    @JsonProperty("bundleConfiguration")
+    private String bundleConfiguration;
+    @JsonProperty("caseBundles")
+    private List<Bundle> caseBundles;
+    @JsonProperty("digitalCaseFile")
+    private DigitalCaseFileType digitalCaseFile;
+
     @JsonProperty("acasCertificate")
     private String acasCertificate;
 
