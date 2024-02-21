@@ -150,6 +150,8 @@ public class DateListedType {
     private String hearingRoomIAC;
     @JsonProperty("hearingRoomLeeds")
     private String hearingRoomLeeds;
+    @JsonProperty("hearingRoomLeedsWestgate")
+    private String hearingRoomLeedsWestgate;
     @JsonProperty("hearingRoomScarborough")
     private String hearingRoomScarborough;
     @JsonProperty("hearingRoomSheffieldCombined")
