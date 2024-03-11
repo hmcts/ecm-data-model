@@ -328,4 +328,6 @@ public class CaseData {
     private List<DocumentTypeItem> piiDocumentCollection;
     @JsonProperty("appealDocumentCollection")
     private List<DocumentTypeItem> appealDocumentCollection;
+    @JsonProperty("addDocumentCollection")
+    private List<DocumentTypeItem> addDocumentCollection;
 }

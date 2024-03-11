@@ -3,11 +3,15 @@ package uk.gov.hmcts.ecm.common.model.ccd.types;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
 import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
+@SuperBuilder
 @Data
+@NoArgsConstructor
 public class DocumentType {
 
     @JsonProperty("typeOfDocument")
@@ -49,4 +53,8 @@ public class DocumentType {
     private String docNumber;
     @JsonProperty("excludeFromDcf")
     private List<String> excludeFromDcf;
+
+    public static DocumentType from(UploadedDocumentType uploadedDocument) {
+        return DocumentType.builder().uploadedDocument(uploadedDocument).build();
+    }
 }
