@@ -307,8 +307,10 @@ public class CaseData {
     private String positionTypeCT;
     @JsonProperty("linkedCaseCT")
     private String linkedCaseCT;
+
     @JsonProperty("transferredCaseLink")
     private String transferredCaseLink;
+
     @JsonProperty("stateAPI")
     private String stateAPI;
 
