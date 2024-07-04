@@ -305,11 +305,15 @@ public class CaseData {
     private String relatedCaseCT;
     @JsonProperty("positionTypeCT")
     private String positionTypeCT;
+
     @JsonProperty("linkedCaseCT")
     private String linkedCaseCT;
-
     @JsonProperty("transferredCaseLink")
     private String transferredCaseLink;
+    @JsonProperty("transferredCaseLinkSourceCaseId")
+    private String transferredCaseLinkSourceCaseId;
+    @JsonProperty("transferredCaseLinkSourceCaseTypeId")
+    private String transferredCaseLinkSourceCaseTypeId;
 
     @JsonProperty("stateAPI")
     private String stateAPI;
