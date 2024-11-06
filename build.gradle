@@ -3,8 +3,8 @@ plugins {
     id 'maven-publish'
 }
 
-group 'uk.gov.hmcts.reform'
-version '1.3.8'
+group 'com.github.hmcts'
+version '1.3.9'
 
 java {
     toolchain {
