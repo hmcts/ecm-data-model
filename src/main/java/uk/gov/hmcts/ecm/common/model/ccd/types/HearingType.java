@@ -3,6 +3,7 @@ package uk.gov.hmcts.ecm.common.model.ccd.types;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
+import uk.gov.hmcts.ecm.common.model.ccd.Document;
 import uk.gov.hmcts.ecm.common.model.ccd.items.DateListedTypeItem;
 
 import java.util.ArrayList;
@@ -53,4 +54,10 @@ public class HearingType {
     private List<String> hearingFormat;
     @JsonProperty("judicialMediation")
     private String judicialMediation;
+    @JsonProperty("hearingNotesDocument")
+    private Document hearingNotesDocument;
+    @JsonProperty("doesHearingNotesDocExist")
+    private String doesHearingNotesDocExist;
+    @JsonProperty("removeHearingNotesDocument")
+    private List<String> removeHearingNotesDocument;
 }

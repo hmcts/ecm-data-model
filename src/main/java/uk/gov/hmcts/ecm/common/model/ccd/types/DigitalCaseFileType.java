@@ -11,4 +11,6 @@ public class DigitalCaseFileType {
     private UploadedDocumentType uploadedDocument;
     @JsonProperty("dateGenerated")
     private String dateGenerated;
+    @JsonProperty("status")
+    private String status;
 }
