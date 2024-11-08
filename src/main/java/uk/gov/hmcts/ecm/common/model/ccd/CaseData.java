@@ -336,4 +336,7 @@ public class CaseData {
     private List<DocumentTypeItem> appealDocumentCollection;
     @JsonProperty("addDocumentCollection")
     private List<DocumentTypeItem> addDocumentCollection;
+
+    @JsonProperty("claimantHearingPreference")
+    private ClaimantHearingPreference claimantHearingPreference;
 }
