@@ -13,4 +13,6 @@ public class DigitalCaseFileType {
     private String dateGenerated;
     @JsonProperty("status")
     private String status;
+    @JsonProperty("error")
+    private String error;
 }
