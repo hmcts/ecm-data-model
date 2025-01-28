@@ -324,6 +324,8 @@ public class CaseData {
     private List<Bundle> caseBundles;
     @JsonProperty("digitalCaseFile")
     private DigitalCaseFileType digitalCaseFile;
+    @JsonProperty("uploadOrRemoveDcf")
+    private String uploadOrRemoveDcf;
 
     @JsonProperty("acasCertificate")
     private String acasCertificate;
