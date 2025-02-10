@@ -341,4 +341,8 @@ public class CaseData {
 
     @JsonProperty("claimantHearingPreference")
     private ClaimantHearingPreference claimantHearingPreference;
+
+    // Migration fields ECM to Reform
+    @JsonProperty("reformCaseLink")
+    private String reformCaseLink;
 }
