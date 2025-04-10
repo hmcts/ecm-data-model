@@ -40,6 +40,8 @@ public class HearingType {
     private String hearingNotes;
     @JsonProperty("judge")
     private String judge;
+    @JsonProperty("additionalJudge")
+    private String additionalJudge;
     @JsonProperty("Hearing_Glasgow")
     private String hearingGlasgow;
     @JsonProperty("Hearing_Aberdeen")
