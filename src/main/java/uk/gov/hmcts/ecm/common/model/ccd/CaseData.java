@@ -10,6 +10,7 @@ import uk.gov.hmcts.ecm.common.model.ccd.items.BFActionTypeItem;
 import uk.gov.hmcts.ecm.common.model.ccd.items.DepositTypeItem;
 import uk.gov.hmcts.ecm.common.model.ccd.items.DocumentTypeItem;
 import uk.gov.hmcts.ecm.common.model.ccd.items.EccCounterClaimTypeItem;
+import uk.gov.hmcts.ecm.common.model.ccd.items.GenericTypeItem;
 import uk.gov.hmcts.ecm.common.model.ccd.items.HearingTypeItem;
 import uk.gov.hmcts.ecm.common.model.ccd.items.JudgementTypeItem;
 import uk.gov.hmcts.ecm.common.model.ccd.items.JurCodesTypeItem;
@@ -18,6 +19,7 @@ import uk.gov.hmcts.ecm.common.model.ccd.items.RespondentSumTypeItem;
 import uk.gov.hmcts.ecm.common.model.ccd.types.AdditionalCaseInfoType;
 import uk.gov.hmcts.ecm.common.model.ccd.types.AddressLabelsAttributesType;
 import uk.gov.hmcts.ecm.common.model.ccd.types.AddressLabelsSelectionType;
+import uk.gov.hmcts.ecm.common.model.ccd.types.CaseNote;
 import uk.gov.hmcts.ecm.common.model.ccd.types.CasePreAcceptType;
 import uk.gov.hmcts.ecm.common.model.ccd.types.ClaimantIndType;
 import uk.gov.hmcts.ecm.common.model.ccd.types.ClaimantOtherType;
@@ -345,4 +347,9 @@ public class CaseData {
     // Migration fields ECM to Reform
     @JsonProperty("reformCaseLink")
     private String reformCaseLink;
+
+    @JsonProperty("caseNotesCollection")
+    private List<GenericTypeItem<CaseNote>> caseNotesCollection;
+    @JsonProperty("addCaseNote")
+    private CaseNote addCaseNote;
 }
